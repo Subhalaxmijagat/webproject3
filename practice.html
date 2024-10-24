@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+
+<body>
+<h1>factorialcalculator</h1>
+<script>
+       function factorialcalculator(number)
+          {
+            if(number<0)
+                {
+                    return "enter a non negative number";
+                }
+            else-if(number==0 || number==1)
+            {
+               return 1;
+            }
+            else{
+               let factorial=1;
+               for(i=2;i<=number;i++)
+                   {
+                     factorial*=i;
+                    }
+
+                   return factorial;
+                  }
+            }
+var n=prompt("Enter any number");
+result=factorialcalculator(n);
+alert(result);
+
+</script>
+</body>
+</html>
